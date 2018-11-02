@@ -3772,6 +3772,16 @@ ul, li {
   background-color: #1F212d;
   height: 55px; }
 
+.m-header2 {
+  background-color: #272935;
+  height: 50px; }
+  .m-header2 .mui-title, .m-header2 .mui-action-back {
+    color: #fff; }
+  .m-header2 .mui-title {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-top: 8px; }
+
 .m-footer-bar {
   border-top: 1px solid #151723;
   box-shadow: none;
@@ -4392,11 +4402,16 @@ icon
 .m-icon {
   display: inline-block; }
 
-.m-icon-search {
+.m-icon-search,
+.m-icon-search2 {
   width: 12px;
   height: 12px;
   background: url("../images/icon/search.png") center no-repeat;
   background-size: cover; }
+
+.m-icon-search2 {
+  width: 20px;
+  height: 20px; }
 
 .m-icon-pdf {
   width: 18px;
