@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="./css/mui.min.css">
+  <link rel="stylesheet" href="./css/mescroll.min.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="./css/f_style.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+  <title>沪伦通-财务分析</title>
+</head>
+
+<body class="bg1">
+  <div class="hlt-wrapper ofa">
+    <header id="header" class="m-header mui-bar mui-bar-nav">
+      <div class="search-wrapper pr" onclick="window.location.href='./search.html'">
+        <input type="text" class="search-ipt w-100" disabled placeholder="输入代码/名称/简拼">
+        <i class="m-icon m-icon-search"></i>
+      </div>
+    </header>
+    <div class="mui-content bg1 pb90">
+      <div class="m-panel bg3 pt11">
+        <ul class="nav-wrapper ">
+          <li class="nav-item "><a href="tradersMustRead.html">操盘必读</a></li>
+          <li class="nav-item"><a href="research.html">跨境转换</a></li>
+          <li class="nav-item active"><a href="OFA.html">财务分析</a></li>
+          <li class="nav-item "><a href="shareholderCapital.html">股本股东</a></li>
+          <li class="nav-item"><a href="companyProfile.html">公司概况</a></li>
+          <li class="nav-item "><a href="analyze.html">分红融资</a></li>
+          <li class="nav-item "><a href="news.html">新闻</a></li>
+          <li class="nav-item "><a href="notice.html">公告</a></li>
+        </ul>
+      </div>
+      <div class="m-panel  pb10">
+        <div class="m-tabs">
+          <ul class="com-tabs js-top-tabs bg3">
+            <li class="pr active">主要指标</li>
+            <li class="pr">资产负债表</li>
+            <li class="pr">利润表</li>
+            <li class="pr">现金流量表 </li>
+          </ul>
+          <div class="mui-slider-groups mt1">
+            <!-- 主要指标 -->
+            <div id="zyzbs" class="mui-slider-item mui-control-content mui-active">
+              <h2 class="m-title noBorder bg3 mb1  c83 pl5">币种：英镑</h2>
+              <h2 class="m-title bg3 mb1">主要财务指标</h2>
+              <div class="finance-wrapper bg3">
+                <div class="finance-item">
+                  <h2 class="title cfff">每股指标</h2>
+                  <div class="row">
+                    <p class="txt">基本每股收益(英镑)</p>
+                    <p class="txt">每股净资产(英镑)</p>
+                    <p class="txt">每股营业收入(英镑)</p>
+                    <p class="txt">每股经营现金流(英镑)</p>
+                    <p class="txt">每股未分配利润(英镑)</p>
+                    <p class="txt">每股派息(英镑)</p>
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <h2 class="title cfff">成长能力指标</h2>
+                  <div class="row">
+                    <p class="txt">营业收入(英镑)</p>
+                    <p class="txt">毛利润(英镑)</p>
+                    <p class="txt">每股营业收入(英镑)</p>
+                    <p class="txt">每股经营现金流(英镑)</p>
+                    <p class="txt">每股未分配利润(英镑)</p>
+                    <p class="txt">每股派息(英镑)</p>
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <h2 class="title cfff">盈利能力指标</h2>
+                  <div class="row">
+                    <p class="txt">净资产收益率</p>
+                    <p class="txt">总资产收益率</p>
+                    <p class="txt">投入资本回报率</p>
+                    <p class="txt">净利率</p>
+                    <p class="txt">毛利率</p>
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <h2 class="title cfff">收益质量指标</h2>
+                  <div class="row">
+                    <p class="txt">预收账款/营业收入</p>
+                    <p class="txt">销售净现金流/营业收入</p>
+                    <p class="txt">经营净现金流/营业收入</p>
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <h2 class="title cfff">运营能力指标</h2>
+                  <div class="row">
+                    <p class="txt">流动比率</p>
+                    <p class="txt">速动比率</p>
+                    <p class="txt">现金流量比率</p>
+                    <p class="txt">资产负债率</p>
+                    <p class="txt">产权比率</p>
+                    <p class="txt">权益乘数</p>
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <h2 class="title cfff">财务风险指标</h2>
+                  <div class="row">
+                    <p class="txt">总资产周转天数（天）</p>
+                    <p class="txt">存货周转天数（天）</p>
+                    <p class="txt">应收账款周转天数（天）</p>
+                    <p class="txt">总资产周转率（次）</p>
+                    <p class="txt">存货周转率（次）</p>
+                    <p class="txt">应收账款周转率（次）</p>
+                  </div>
+                </div>
+                <div class="finance-swiper">
+                  <div class="swiper-container finance-swiper-container1">
+                    <div class="swiper-wrapper finance-swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="datetime">2018三季报</div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="datetime">2018三季报</div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="datetime">2018三季报</div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- 资产负债表 -->
+            <div id="zcfzs" class="mui-slider-item mui-control-content">
+              <h2 class="m-title noBorder bg3 mb1  c83 pl5 pr">币种：英镑 
+                <div class="mui-input-row mui-checkbox m-checkbox  mui-left">
+                  <label>同比</label>
+                  <input name="checkbox1" value="Item 1" type="checkbox" >
+                </div>
+              </h2>
+              <h2 class="m-title bg3 mb1">流动资产</h2>
+              <div class="finance-wrapper bg3">
+                <div class="finance-item">
+                  <h2 class="title cfff">每股指标</h2>
+                  <div class="row">
+                    <p class="txt">货币资金</p>
+                    <p class="txt">应收票据</p>
+                    <p class="txt">应收账款</p>
+                    <p class="txt">预付款项</p>
+                    <p class="txt">应收利息</p>
+                    <p class="txt">其他应收款</p>
+                    <p class="txt">存货</p>
+                    <p class="txt">其他流动资产</p>
+                    <p class="txt cfff">流动资产合计</p>
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <h2 class="title cfff">非流动资产</h2>
+                  <div class="row">
+                    <p class="txt">固定资产</p>
+                    <p class="txt">在建工程</p>
+                    <p class="txt">无形资产</p>
+                    <p class="txt">长期待摊费用</p>
+                    <p class="txt">递延所得税资产</p>
+                    <p class="txt">其他非流动资产</p>
+                    <p class="txt cfff">非流动资产合计</p>
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <h2 class="title cfff">资产总计</h2>
+                </div>
+                <div class="finance-item">
+                  <h2 class="title cfff">流动负债</h2>
+                  <div class="row">
+                    <p class="txt">吸收存款及同业存放</p>
+                    <p class="txt">应付票据</p>
+                    <p class="txt">应付账款</p>
+                    <p class="txt">预收款项</p>
+                    <p class="txt">应付职工薪酬</p>
+                    <p class="txt">应交税费</p>
+                    <p class="txt">应付股利</p>
+                    <p class="txt">其他应付款</p>
+                    <p class="txt cfff">流动负债合计</p>
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <h2 class="title cfff">非流动负债</h2>
+                  <div class="row">
+                    <p class="txt">预计负债</p>
+                    <p class="txt">递延收益</p>
+                    <p class="txt">递延所得税负债</p>
+                    <p class="txt">其他非流动负债</p>
+                    <p class="txt cfff">非流动负债合计</p>
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <div class="row">
+                    <h2 class="txt cfff">负债合计</h2>
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <h2 class="title cfff">所有者权益（或股东权益）</h2>
+                  <div class="row">
+                    <p class="txt">实收资本（或股本）</p>
+                    <p class="txt">资本公积</p>
+                    <p class="txt">盈余公积</p>
+                    <p class="txt">未分配利润</p>
+                    <p class="txt cfff">归属母公司股东权益合计</p>
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <h2 class="title cfff"></h2>
+                  <div class="row">
+                    <p class="txt">少数股东权益</p>
+                    <p class="txt cfff">股东权益合计</p>
+                    <p class="txt cfff">负债与股东权益合计</p>
+                  </div>
+                </div>
+                <div class="finance-swiper">
+                  <div class="swiper-container finance-swiper-container2">
+                    <div class="swiper-wrapper finance-swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="datetime">2018三季报</div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt12">
+                          <p class="txt">55555</p>
+                        </div>
+                        <div class="row pt40">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt12">
+                          <p class="txt">555555</p>
+                        </div>
+                        <div class="row pt40">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt24">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="datetime">2018三季报</div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt12">
+                          <p class="txt">55555</p>
+                        </div>
+                        <div class="row pt40">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt12">
+                          <p class="txt">555555</p>
+                        </div>
+                        <div class="row pt40">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt24">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- 利润表 -->
+            <div id="lrb" class="mui-slider-item mui-control-content">
+              <h2 class="m-title noBorder bg3 mb1  c83 pl5">币种：英镑
+                <div class="mui-input-row mui-checkbox m-checkbox  mui-left">
+                  <label>同比</label>
+                  <input name="checkbox1" value="Item 1" type="checkbox" >
+                </div>
+              </h2>
+              <div class="finance-wrapper bg3">
+                <div class="finance-item">
+                  <h2 class="title cfff">营业总收入</h2>
+                  <div class="row">
+                    <p class="txt">营业收入</p>
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <h2 class="title cfff">营业总成本</h2>
+                  <div class="row">
+                    <p class="txt">营业成本</p>
+                    <p class="txt">提取保险合同准备金净额</p>
+                    <p class="txt">营业税金及附加</p>
+                    <p class="txt">销售费用</p>
+                    <p class="txt">管理费用</p>
+                    <p class="txt">财务费用</p>
+                    <p class="txt">资产减值损失</p>
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <h2 class="title cfff">资产总计</h2>
+                </div>
+                <div class="finance-item">
+                  <h2 class="title cfff">其他经营收益</h2>
+                  <div class="row">
+                    <p class="txt">加：投资收益</p>
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <h2 class="title cfff">营业利润</h2>
+                  <div class="row">
+                    <p class="txt">减：所得税费用</p>
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <h2 class="title cfff">流动负债</h2>
+                  <div class="row">
+                    <p class="txt">其中：归属母公司<br>股东的净利润</p>
+                    <p class="txt">少数股东损益</p>
+                    <p class="txt">扣除非经常性损益<br>后的净利润</p>
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <h2 class="title cfff">每股收益</h2>
+                  <div class="row">
+                    <p class="txt">基本每股收益</p>
+                    <p class="txt">稀释每股收益</p>
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <h2 class="title cfff">综合收益总额</h2>
+                  <div class="row">
+                    <p class="txt">归属母公司所有者<br>的综合收益总额</p>
+                    <p class="txt">归属少数股东的综<br>合收益总额</p>
+                  </div>
+                </div>
+                <div class="finance-swiper">
+                  <div  class="swiper-container finance-swiper-container3">
+                    <div class="swiper-wrapper finance-swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="datetime">2018三季报</div>
+                        <div class="row pt21">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt39">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt14">
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt39">
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt12">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt40">
+                          <p class="txt">1.2512</p>
+                          <p class="txt pt20">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt60">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt39">
+                          <p class="txt">1.2512</p>
+                          <p class="txt pt20">1.2512</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="datetime">2018三季报</div>
+                        <div class="row pt21">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt39">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt14">
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt39">
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt12">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt40">
+                          <p class="txt">1.2512</p>
+                          <p class="txt pt20">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt60">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt39">
+                          <p class="txt">1.2512</p>
+                          <p class="txt pt20">1.2512</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- 现金流量表 -->
+            <div id="xjlb" class="mui-slider-item mui-control-content">
+              <h2 class="m-title noBorder bg3 mb1  c83 pl5">币种：英镑
+                <div class="mui-input-row mui-checkbox m-checkbox  mui-left">
+                  <label>同比</label>
+                  <input name="checkbox1" value="Item 1" type="checkbox" >
+                </div>
+              </h2>
+              <div class="finance-wrapper bg3">
+                <div class="finance-item">
+                  <p class="title cfff">经营活动产生的现金流量</p>
+                  <div class="row">
+                    <p class="txt">销售商品、提供劳务<br>收到的现金</p>
+                    <p class="txt">收到的税费返还</p>
+                    <p class="txt">收到其他与经营<br>活动有关的现金</p>
+                    <p class="txt cfff">经营活动现金流入小计</p>
+                  </div>
+                  <div class="row">
+                    <p class="txt">购建固定资产、无形资产和其他<br>长期投资支付的现金净额</p>
+                    <p class="txt">投资支付的现金</p>
+                    <p class="txt">取得子公司及其他营业单位<br>支付的现金净额</p>
+                    <p class="txt">支付其他与投资活动<br>有关的现金</p>
+                    <p class="txt cfff">投资活动现金流出小计</p>
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <p class="title cfff">投资活动产生的现金流量净额</p>
+                </div>
+                <div class="finance-item">
+                  <p class="title cfff">筹资活动产生的现金流量</p>
+                  <div class="row">
+                    <p class="txt">吸收投资收到的现金</p>
+                    <p class="txt">子公司吸收少数股东<br>投资收到的现金</p>
+                    <p class="txt">取得借款收到的现金</p>
+                    <p class="txt cfff">筹资活动现金流入小计</p>
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <div class="row">
+                    <p class="txt">偿还债务支付的现金</p>
+                    <p class="txt">分配股利、利润或偿付利息<br>支付的现金</p>
+                    <p class="txt">子公司支付给少数<br>股东的股利、利润</p>
+                    <p class="txt">支付其他与筹资<br>活动有关的现金</p>
+                    <p class="txt cfff">筹资活动现金流入小计</p>
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <p class="title cfff">筹资活动产生的现金流量净额</p>
+                </div>
+                <div class="finance-item">
+                  <p class="title cfff">汇率变动对现金及<br>现金等价物的影响</p>
+                </div>
+                <div class="finance-item">
+                  <p class="title cfff">现金及现金等价物净增加额</p>
+                </div>
+                <div class="finance-item">
+                  <div class="row">
+                    <p class="txt">加：期初现金及现金<br>等价物余额</p>
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <p class="title cfff">期末现金及现金等价物余额</p>
+                </div>
+                <div class="finance-swiper">
+                  <div class="swiper-container finance-swiper-container4">
+                    <div class="swiper-wrapper finance-swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="datetime">2018三季报</div>
+                        <div class="row pt50">
+                          <p class="txt">1.2512</p>
+                          <p class="txt pt20">1.2512</p>
+                          <p class="txt ">1.2512</p>
+                          <p class="txt pt20">1.2512</p>
+                        </div>
+                        <div class="row pt0">
+                          <p class="txt">1.2512</p>
+                          <p class="txt pt19">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt pt19">1.2512</p>
+                          <p class="txt pt19">1.2512</p>
+                        </div>
+                        <div class="row pt12">
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt39">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt pt20">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt10">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt pt20">1.2512</p>
+                          <p class="txt pt20">1.2512</p>
+                          <p class="txt pt18">1.2512</p>
+                        </div>
+                        <div class="row pt12">
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt12">
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt30">
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt10">
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt28">
+                          <p class="txt">1.2512</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="datetime">2018三季报</div>
+                        <div class="row pt50">
+                          <p class="txt">1.2512</p>
+                          <p class="txt pt20">1.2512</p>
+                          <p class="txt ">1.2512</p>
+                          <p class="txt pt20">1.2512</p>
+                        </div>
+                        <div class="row pt0">
+                          <p class="txt">1.2512</p>
+                          <p class="txt pt19">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt pt19">1.2512</p>
+                          <p class="txt pt19">1.2512</p>
+                        </div>
+                        <div class="row pt12">
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt39">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt pt20">1.2512</p>
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt10">
+                          <p class="txt">1.2512</p>
+                          <p class="txt">1.2512</p>
+                          <p class="txt pt20">1.2512</p>
+                          <p class="txt pt20">1.2512</p>
+                          <p class="txt pt18">1.2512</p>
+                        </div>
+                        <div class="row pt12">
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt12">
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt30">
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt10">
+                          <p class="txt">1.2512</p>
+                        </div>
+                        <div class="row pt28">
+                          <p class="txt">1.2512</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fNav">
+            <ul class="com-tabs js-f-tabs bg3">
+              <li class="pr active">全部</li>
+              <li class="pr">年报</li>
+              <li class="pr">三季报</li>
+              <li class="pr">中报</li>
+              <li class="pr">一季报 </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <nav class="mui-bar mui-bar-tab bg3 m-footer-bar">
+        <a class="mui-tab-items mui-active" href="index.html">
+          <span class="mui-icon m-icon-generalize"></span>
+          <span class="mui-tab-label">主页</span>
+        </a>
+        <a class="mui-tab-items" href="javascript:;">
+          <span class="mui-icon m-icon-charts"></span>
+          <span class="mui-tab-label">行情</span>
+        </a>
+        <a class="mui-tab-items" href="javascript:;">
+          <span class="mui-icon m-icon-news"></span>
+          <span class="mui-tab-label">自选</span>
+        </a>
+        <a class="mui-tab-items" href="javascript:;">
+          <span class="mui-icon m-icon-finance"></span>
+          <span class="mui-tab-label">交易</span>
+        </a>
+        <a class="mui-tab-items" href="javascript:;">
+          <span class="mui-icon m-icon-analyze"></span>
+          <span class="mui-tab-label">我的</span>
+        </a>
+      </nav>
+    </footer>
+  </div>
+  <script type="text/javascript" src="./assets/libs/seajs.js"></script>
+  <script type="text/javascript" src="./assets/libs/mui.min.js"></script>
+  <script type="text/javascript" src="./assets/js/config.js"></script>
+  <script src="./assets/libs/swiper.min.js"></script>
+  <script>
+    window.onload = function () {
+      seajs.use('./js/ofa.js');
+    }
+  </script>
+</body>
+
+</html>

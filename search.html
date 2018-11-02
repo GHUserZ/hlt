@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="./css/mui.min.css">
+  <link rel="stylesheet" href="./css/mescroll.min.css">
+  <link rel="stylesheet" href="./css/f_style.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+  <title>沪伦通-搜索</title>
+</head>
+
+<body class="bg1">
+  <div class="hlt-wrapper pr search-index">
+    <header id="header" class="m-header mui-bar mui-bar-nav">
+      <div class="search-wrapper pr search-back">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left mt6 cfff" onclick="history.back(-1)"></a>
+        <input id="textSearch" type="text" class="search-ipt" placeholder="输入代码/名称/简拼">
+        <i class="m-icon m-icon-search"></i>
+        <a href="javascript:;" class="search-cancel" onclick="history.back(-1)">取消</a>
+      </div>
+    </header>
+    <!-- 查询结果 -->
+    <div  id="searchResultDiv" class="m-panel bg3 search-result-wrapper search-result" style="display: none" >
+    </div>
+    <!-- 查询结果 end-->
+    <div class="search-history bg1 pr">
+      <h2 class="m-title noBorder bg3 pl7 mt5 mb1">历史记录<span class="mui-icon mui-icon-trash"></span></h2>
+      <ul class="search-result-list bg3">
+        <li>
+          <a href="javascript:;" class="result-item">
+            <div class="tc">
+              <p class="name">贵州茅台</p>
+              <p class="code">600519</p>
+            </div>
+            <div class="pr">
+              <div class="icon-box addStock">
+                <span class="mui-icon mui-icon-plusempty"></span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;" class="result-item">
+            <div class="tc">
+              <p class="name">贵州茅台</p>
+              <p class="code">600519</p>
+            </div>
+            <div class="pr">
+              <div class="icon-box addStock">
+                <span class="mui-icon mui-icon-plusempty"></span>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <script type="text/javascript" src="./assets/libs/seajs.js"></script>
+  <script type="text/javascript" src="./assets/libs/mui.min.js"></script>
+  <script type="text/javascript" src="./assets/js/config.js"></script>
+  <script>
+    window.onload = function () {
+      seajs.use('./js/search.js');
+    }
+  </script>
+</body>
+
+</html>

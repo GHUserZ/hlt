@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="./css/mui.min.css">
+  <link rel="stylesheet" href="./css/f_style.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+  <title>沪伦通-股本股东</title>
+</head>
+
+<body class="bg1">
+  <div class="hlt-wrapper">
+    <header id="header" class="m-header mui-bar mui-bar-nav">
+      <div class="search-wrapper pr" onclick="window.location.href='./search.html'">
+        <input type="text" class="search-ipt w-100" disabled placeholder="输入代码/名称/简拼">
+        <i class="m-icon m-icon-search"></i>
+      </div>
+    </header>
+    <div class="mui-content bg1 pb50">
+      <div class="m-panel bg3 pt11">
+        <ul class="nav-wrapper ">
+          <li class="nav-item "><a href="tradersMustRead.html">操盘必读</a></li>
+          <li class="nav-item"><a href="research.html">跨境转换</a></li>
+          <li class="nav-item"><a href="OFA.html">财务分析</a></li>
+          <li class="nav-item active"><a href="shareholderCapital.html">股本股东</a></li>
+          <li class="nav-item "><a href="companyProfile.html">公司概况</a></li>
+          <li class="nav-item"><a href="analyze.html">分红融资</a></li>
+          <li class="nav-item "><a href="news.html">新闻</a></li>
+          <li class="nav-item"><a href="notice.html">公告</a></li>
+        </ul>
+      </div>
+      <!-- 股本结构 -->
+      <h2 class="m-title mb1 bg3">股本结构</h2>
+      <div class="m-panel bg3 pr">
+        <div class="mui-slider">
+          <div class="mui-slider-group">
+            <div class="mui-slider-item">
+              <div class="latest-indicators2">
+                <div class="latest-item-info clearfix">
+                  <p class="latest-indicators-item fl"><span class="name w65">截止日期</span><span class="num w-56 tr">2017-12-31</span></p>
+                  <p class="latest-indicators-item fr"><span class="name w65">变动原因</span><span class="num w-56 tr">CDR上市</span></p>
+                </div>
+              </div>
+              <div class="pieCharts"></div>
+              <div class="latest-indicators2">
+                <div class="latest-item-info clearfix">
+                  <p class="latest-indicators-item"><span class="num w-33">已发行普通股</span><span class="num w-33 tr">13586.55万股</span><span class="num w-33 tr">100%</span></p>
+                  <p class="latest-indicators-item"><span class="num w-33">CDR折算普通股</span><span class="num w-33 tr">1386.55万股</span><span class="num w-33 tr">100%</span></p>
+                  <p class="latest-indicators-item"><span class="num w-33">已发行CDR</span><span class="num w-33 tr">1586.55万份</span><span class="num w-33 tr">100%</span></p>
+                </div>
+              </div>  
+            </div>
+            <div class="mui-slider-item">
+               <div class="latest-indicators2">
+                <div class="latest-item-info clearfix">
+                  <p class="latest-indicators-item fl"><span class="name w65">截止日期2</span><span class="num w-56">2017-12-31</span></p>
+                  <p class="latest-indicators-item fr"><span class="name w65">CDR份额</span><span class="num w-56">1.5亿份</span></p>
+                </div>
+              </div>
+              <div class="pieCharts"></div>
+              <div class="latest-indicators2">
+                <div class="latest-item-info clearfix">
+                  <p class="latest-indicators-item"><span class="num w-33">已发行普通股</span><span class="num w-33 tr">13586.55万股</span><span class="num w-33 tr">100%</span></p>
+                  <p class="latest-indicators-item"><span class="num w-33">CDR折算普通股</span><span class="num w-33 tr">1386.55万股</span><span class="num w-33 tr">100%</span></p>
+                  <p class="latest-indicators-item"><span class="num w-33">已发行CDR</span><span class="num w-33 tr">1586.55万份</span><span class="num w-33 tr">100%</span></p>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="prevNextBox">
+          <a href="javascript:;" class="prev" id="prev" style="display: none"></a>
+          <a href="javascript:;" class="next" id="next"></a>
+        </div>
+      </div>
+      <!-- 股本结构 end-->
+      <!-- CDR股东持股情况　 -->
+      <h2 class="m-title bg3 mb1 mt2">CDR股东持股情况　</h2>
+      <div class="m-panel bg3 pb30">
+        <div class="navTime">
+          <!-- 小于等于四个li删除class "w640" -->
+          <ul class="time-list pt10 w640">
+            <li class="time-item active">2018-10-13</li>
+            <li class="time-item">2018-10-14</li>
+            <li class="time-item">2018-10-15</li>
+            <li class="time-item">2018-10-16</li>
+          </ul>
+        </div>
+        <div class="executive table mui-text-center pt10">
+          <table>
+            <thead>
+              <tr>
+                <th width="50%" class="tl pl10">股份分类</th>
+                <th width="25%">数值</th>
+                <th>占比</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tl pl10">
+                  <p class="mui-ellipsis">William H. Gates III KBE</p>
+                </td>
+                <td>3.077亿</td>
+                <td>7.14%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- CDR股东持股情况　 end-->
+      <!-- 主要股东持股情况 -->
+      <h2 class="m-title bg3 mb1 mt2">主要股东持股情况　</h2>
+      <div class="m-panel bg3 pb30">
+        <div class="navTime">
+          <!-- 小于等于四个li删除class "w640" -->
+          <ul class="time-list pt10 w640">
+            <li class="time-item active">2018-10-13</li>
+            <li class="time-item">2018-10-14</li>
+            <li class="time-item">2018-10-15</li>
+            <li class="time-item">2018-10-16</li>
+          </ul>
+        </div>
+        <div class="executive table mui-text-center pt10">
+          <table>
+            <thead>
+              <tr>
+                <th width="50%" class="tl pl10">股份分类</th>
+                <th width="25%">数值</th>
+                <th>占比</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tl pl10">
+                  <p class="mui-ellipsis">William H. Gates III KBE</p>
+                </td>
+                <td>3.077亿</td>
+                <td>7.14%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- 主要股东持股情况 end-->
+      
+    </div>
+    <footer>
+      <nav class="mui-bar mui-bar-tab bg3 m-footer-bar">
+        <a class="mui-tab-items mui-active" href="index.html">
+          <span class="mui-icon m-icon-generalize"></span>
+          <span class="mui-tab-label">主页</span>
+        </a>
+        <a class="mui-tab-items" href="javascript:;">
+          <span class="mui-icon m-icon-charts"></span>
+          <span class="mui-tab-label">行情</span>
+        </a>
+        <a class="mui-tab-items" href="javascript:;">
+          <span class="mui-icon m-icon-news"></span>
+          <span class="mui-tab-label">自选</span>
+        </a>
+        <a class="mui-tab-items" href="javascript:;">
+          <span class="mui-icon m-icon-finance"></span>
+          <span class="mui-tab-label">交易</span>
+        </a>
+        <a class="mui-tab-items" href="javascript:;">
+          <span class="mui-icon m-icon-analyze"></span>
+          <span class="mui-tab-label">我的</span>
+        </a>
+      </nav>
+    </footer>
+  </div>
+  <script type="text/javascript" src="./assets/libs/seajs.js"></script>
+  <script type="text/javascript" src="./assets/libs/mui.min.js"></script>
+  <script type="text/javascript" src="./assets/js/config.js"></script>
+  <script>
+    window.onload = function () {
+      seajs.use('./js/shareholderCapital.js');
+    }
+  </script>
+</body>
+
+</html>

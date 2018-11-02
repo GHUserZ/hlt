@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="./css/mui.min.css">
+  <link rel="stylesheet" href="./css/f_style.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+  <title>沪伦通-首页</title>
+</head>
+
+<body class="bg1">
+  <div class="hlt-wrapper hlt-index">
+    <header id="header" class="m-header mui-bar mui-bar-nav">
+      <div class="search-wrapper pr"onclick="window.location.href='./search.html'">
+        <input type="text" class="search-ipt w-100" disabled  placeholder="输入代码/名称/简拼" >
+        <i class="m-icon m-icon-search"></i>
+      </div>
+    </header>
+    <div class="mui-content bg1 pb50">
+      <div class="m-panel bg3 pt11">
+        <ul class="nav-wrapper ">
+          <li class="nav-item "><a href="tradersMustRead.html">操盘必读</a></li>
+          <li class="nav-item"><a href="research.html">跨境转换</a></li>
+          <li class="nav-item"><a href="OFA.html">财务分析</a></li>
+          <li class="nav-item"><a href="shareholderCapital.html">股本股东</a></li>
+          <li class="nav-item "><a href="companyProfile.html">公司概况</a></li>
+          <li class="nav-item"><a href="analyze.html">分红融资</a></li>
+          <li class="nav-item "><a href="news.html">新闻</a></li>
+          <li class="nav-item"><a href="notice.html">公告</a></li>
+        </ul>
+      </div>
+      <!-- 资金流向 -->
+      <h2 class="m-title mb1 bg3">资金流向<span class="time">（09-28 17:12）</span></h2>
+      <div class="m-panel bg3">
+        <div class="latest-indicators">
+          <div class="l">
+            <div class="title-l tc pb10">沪股通</div>
+            <p class="latest-indicators-item"><span class="name">资金方向</span><span class="num">东向</span></p>
+            <p class="latest-indicators-item"><span class="name">交易状态</span><span class="num">收盘</span></p>
+            <p class="latest-indicators-item"><span class="name">资金净流入</span><span class="num">7.01亿</span></p>
+            <p class="latest-indicators-item"><span class="name">当日资金余额</span><span class="num"> 512.99亿</span></p>
+            <p class="latest-indicators-item"><span class="name">当日资金限额</span><span class="num"> 520亿</span></p>
+            <p class="latest-indicators-item"><span class="name">上涨数</span><span class="num">460家</span></p>
+            <p class="latest-indicators-item"><span class="name">持平数</span><span class="num">35家</span></p>
+            <p class="latest-indicators-item"><span class="name">下跌数</span><span class="num">460家</span></p>
+            <p class="latest-indicators-item"><span class="name">上证指数</span><span class="num">+1.06%</span></p>
+          </div>
+          <div class="r">
+            <div class="title-l tc pb10">伦股通（沪）</div>
+            <p class="latest-indicators-item"><span class="name">资金方向</span><span class="num">东向</span></p>
+            <p class="latest-indicators-item"><span class="name">交易状态</span><span class="num">收盘</span></p>
+            <p class="latest-indicators-item"><span class="name">资金净流入</span><span class="num">7.01亿</span></p>
+            <p class="latest-indicators-item"><span class="name">当日资金余额</span><span class="num"> 512.99亿</span></p>
+            <p class="latest-indicators-item"><span class="name">当日资金限额</span><span class="num"> 520亿</span></p>
+            <p class="latest-indicators-item"><span class="name">上涨数</span><span class="num">460家</span></p>
+            <p class="latest-indicators-item"><span class="name">持平数</span><span class="num">35家</span></p>
+            <p class="latest-indicators-item"><span class="name">下跌数</span><span class="num">460家</span></p>
+            <p class="latest-indicators-item"><span class="name">英国富时100</span><span class="num">+1.06%</span></p>
+          </div>
+        </div>
+      </div>
+      <!-- 资金流向 end-->
+      <!-- 东向资金 -->
+      <h2 class="m-title mb1 bg3">东向资金 <i class="line"></i> 沪股通<span class="time r">2018-10-17</span></h2>
+      <div class="m-panel bg3 pb10">
+        <div class="m-tabs-wrapper pl20 pr20">
+          <ul id="dxzj" class="time-list pt10">
+            <li class="time-item active">资金流入</li>
+            <li class="time-item">资金余额</li>
+            <li class="time-item">历史走势</li>
+          </ul>
+        </div>
+        <div class="rangeSelector tab-box  mt20 js-dRange" style="display: none;">
+          <ul class="time-list time-list-small">
+            <li class="time-item active">近1月</li>
+            <li class="time-item">近3月</li>
+            <li class="time-item">近6月</li>
+            <li class="time-item">近1年</li>
+            <li class="time-item">全部</li>
+          </ul>
+        </div>
+        <div id="dcharts" class="indexCharts"></div>
+        <div class="lenged_wrapper">
+          <div class="lenged-item mb8 tc">
+            当日净流入 <span class="cRed">7.01亿元</span>，当日余额 <span class="cRed">512.99亿元</span>
+          </div>
+        </div>
+      </div>
+      <!-- 东向资金 end-->
+       <!-- 东向资金 -->
+      <h2 class="m-title mb1 bg3">西向资金 <i class="line"></i> 伦股通<span class="time r">2018-10-17</span></h2>
+      <div class="m-panel bg3 pb10">
+        <div class="m-tabs-wrapper pl20 pr20">
+          <ul id="xxzj" class="time-list pt10">
+            <li class="time-item active">资金流入</li>
+            <li class="time-item">资金余额</li>
+            <li class="time-item">历史走势</li>
+          </ul>
+        </div>
+        <div class="rangeSelector tab-box  mt20 js-xRange" style="display: none;">
+          <ul class="time-list time-list-small">
+            <li class="time-item active">近1月</li>
+            <li class="time-item">近3月</li>
+            <li class="time-item">近6月</li>
+            <li class="time-item">近1年</li>
+            <li class="time-item">全部</li>
+          </ul>
+        </div>
+        <div id="xcharts" class="indexCharts"></div>
+        <div class="lenged_wrapper">
+          <div class="lenged-item mb8 tc">
+            当日净流入 <span class="cRed">7.01亿元</span>，当日余额 <span class="cRed">512.99亿元</span>
+          </div>
+        </div>
+      </div>
+      <!-- 东向资金 end-->
+      <!-- 沪伦通个股涨帐榜 -->
+      <h2 class="m-title bg3 mb1 mt2">沪伦通个股涨帐榜</h2>
+      <div class="m-panel bg3 pb10">
+        <ul class="time-list pt10 time-list-2">
+          <li class="time-item active">沪股通</li>
+          <li class="time-item">伦股通（沪）</li>
+        </ul>
+        <div class="executive table mui-text-center pt10">
+          <table>
+            <thead>
+              <tr>
+                <th width="15%">序号</th>
+                <th width="40%">股票</th>
+                <th>最新价</th>
+                <th>涨幅</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <p class="stock-name">鹏起科技</p>
+                  <p class="stock-code">600614</p>
+                </td>
+                <td class="cRed">3.07</td>
+                <td class="cRed">7.14%</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>
+                  <p class="stock-name">鹏起科技</p>
+                  <p class="stock-code">600614</p>
+                </td>
+                <td class="cRed">3.07</td>
+                <td class="cRed">7.14%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- 沪伦通个股涨帐榜 end-->
+      <!-- 沪伦通个股跌幅榜 -->
+      <h2 class="m-title bg3 mb1 mt2">沪伦通个股跌幅榜</h2>
+      <div class="m-panel bg3 pb10">
+        <ul class="time-list pt10 time-list-2">
+          <li class="time-item active">沪股通</li>
+          <li class="time-item">伦股通（沪）</li>
+        </ul>
+        <div class="executive table mui-text-center pt10">
+          <table>
+            <thead>
+              <tr>
+                <th width="15%">序号</th>
+                <th width="40%">股票</th>
+                <th>最新价</th>
+                <th>涨幅</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <p class="stock-name">鹏起科技</p>
+                  <p class="stock-code">600614</p>
+                </td>
+                <td class="cGreen">3.07</td>
+                <td class="cGreen">-7.14%</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>
+                  <p class="stock-name">鹏起科技</p>
+                  <p class="stock-code">600614</p>
+                </td>
+                <td class="cGreen">3.07</td>
+                <td class="cGreen">-7.14%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- 沪伦通个股跌幅榜 end-->
+    </div>
+    <footer>
+      <nav class="mui-bar mui-bar-tab bg3 m-footer-bar">
+        <a class="mui-tab-items mui-active" href="index.html">
+          <span class="mui-icon m-icon-generalize"></span>
+          <span class="mui-tab-label">主页</span>
+        </a>
+        <a class="mui-tab-items" href="javascript:;">
+          <span class="mui-icon m-icon-charts"></span>
+          <span class="mui-tab-label">行情</span>
+        </a>
+        <a class="mui-tab-items" href="javascript:;">
+          <span class="mui-icon m-icon-news"></span>
+          <span class="mui-tab-label">自选</span>
+        </a>
+        <a class="mui-tab-items" href="javascript:;">
+          <span class="mui-icon m-icon-finance"></span>
+          <span class="mui-tab-label">交易</span>
+        </a>
+        <a class="mui-tab-items" href="javascript:;">
+          <span class="mui-icon m-icon-analyze"></span>
+          <span class="mui-tab-label">我的</span>
+        </a>
+      </nav>
+    </footer>
+  </div>
+  <script type="text/javascript" src="./assets/libs/seajs.js"></script>
+  <script type="text/javascript" src="./assets/libs/mui.min.js"></script>
+  <script type="text/javascript" src="./assets/js/config.js"></script>
+  <script>
+    window.onload = function () {
+      seajs.use('./js/index.js');
+    }
+  </script>
+</body>
+
+</html>
